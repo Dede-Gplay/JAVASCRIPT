@@ -4,11 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+ 
+     function Abstract(){
+        document.getElementById("Try").innerHTML= "A Paragraph Changed"
+    }
+      Abstract()
+    </script>
 </head>
 <body>
-    
+    <h1 id="demo"></h1>
+    <p id="dm1"></p>
+    <button type="button" onclick="document.getElementById('Dm2').innerHTML= Date()">
+        Click to display Date and Time
+    </button>
+    <p id="Dm2"></p>
+    <button type="button" onclick="document.getElementById('Myimg').src='./JAVASCRIPT/light_bulb.jpeg'">
+        Turn On The Light
+    </button>
+    <img id="Myimg" src="./JAVASCRIPT/light_bulb.jpeg" style= "width:100px">
+    <button type="button" onclick="document.getElementById('Myimg').src='./JAVASCRIPT/light_bulb_off.jpeg'">
+        Turn Off The Light
+    </button>
+    <p id="Hide">Hide Me</p>
+    <button type="button" onclick="document.getElementById('Hide').style.display='none'">Click To Hide</button>
+    <p id="display" style="display: none;">Hide Me</p>
+    <button type="button" onclick="document.getElementById('display').style.display='block'">Click</button>
+    <h1 id="Try">Paragraph</h1>
+    <button type="button" onclick="Abstract()">Click</button>
     <script src="About.js">
-
+         
     </script>
 </body>
 </html>
