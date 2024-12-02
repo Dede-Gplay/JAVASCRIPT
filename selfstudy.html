@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*if(0){
+            console.log('truthy')
+        }
+        const cartQuantity = 5;
+
+        if (cartQuantity){
+            console.log('cart has product')
+        }
+
+        console.log(!0)
+        let variable1;
+        console.log(variable1)*/
+        
+        //shortcuts for if statements
+        //ternary operator
+        const results = true ? 'truthy' : 'falsy';
+        console.log(results)
+
+        let result = 0 ? 'truthy' : 'falsy';
+        console.log(result)
+
+        //Guard Operator
+        false && console.log('hello');
+        const message = false && 'hello';
+        console.log(message);
+        const mesage = 5 && 'hello';
+        console.log(mesage);
+
+        //Defualt Operator
+        const  currency = 'EUR' || 'USD';
+        console.log(currency)
+        const cur = undefined || 'USD'
+        console.log(cur);
+
+      
+    </script>
+</body>
+</html>

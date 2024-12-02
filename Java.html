@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        class rectangle {
+    constructor (Length, Width){
+        this.Length = Length;
+        this.Width = Width;
+    }
+    calculateArea(){
+        return this.Length * this.Width;
+    }
+    calculatePerimeter(){
+        return 2 * (this.Length + this.Width)
+    }
+}
+const rect = new rectangle(10,5);
+console.log(rect.calculateArea());
+console.log(rect.calculatePerimeter());
+
+class Animal{
+    constructor(name){
+        this.name=name
+    }
+    att(){
+        return 'You are' + " " + this.name
+    }
+
+}
+class cat extends Animal{
+    constructor(name, color){
+        super(name);
+        this.color = color;
+    }
+    atti(){
+        return "This is the name of the cat" + " " + this.name
+        + " and the color is" + " " + this.color
+    }
+}
+cat1 = new cat("Mike", "Red")
+console.log(cat1.atti())
+
+    </script>
+</body>
+</html>

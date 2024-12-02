@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css">
+</head>
+<body>
+    <div class="Ex D1"><p>My God has helped me in JS....</p></div>
+    <div class="Ex D2"><p>But Javascript get has e be shaaa o....</p></div>
+    <div class="Ex D3"><p>Naso i don dey get am....</p></div>
+    <div class="Ex D4"><p>I will survive this reca God help me....</p></div>
+    <script>
+        let classname = document.getElementsByClassName("Ex");
+        let selctor1 = document.querySelector(".Ex.D1");
+        let selctor2 = document.querySelector(".Ex.D2");
+        let selctor3 = document.querySelector(".Ex.D3");
+        let selctor4 = document.querySelector(".Ex.D4")
+        for(i=0; i<classname.length; i++){
+            classname[i].style.border = "2px solid aqua";
+            classname[i].style.margin = "10px";
+            classname[i].style.padding = "5px";
+            classname[i].style.width = "300px";
+            classname[i].style.float = "left";
+            classname[i].style.borderRadius = "10px";
+            classname[i].style.height = "100px";
+            classname[i].style.color = "white";
+        }
+        selctor1.style.backgroundColor = "red";
+        selctor2.style.backgroundColor = "grey";
+        selctor3.style.backgroundColor = "blue";
+        selctor4.style.backgroundColor = "yellow ";
+       
+
+
+    </script>
+</body>
+</html>
