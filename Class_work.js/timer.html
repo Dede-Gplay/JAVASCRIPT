@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer</title>
+</head>
+<body>
+    <p id="demo" class="demo"></p>
+    <button onclick="clearInterval(myVar)">Stop</button>
+    <script>
+        function waittomove(){
+               alert('Hello World');
+        }
+
+        const myVar = setInterval(myTimer, 1000);
+
+
+        function myTimer(){
+            const d = new Date();
+            document.getElementById('demo').innerHTML = d.toLocaleTimeString();
+        }
+        design = document.getElementsByClassName('demo');
+        design.style.color = 'red'
+    </script>
+    
+</body>
+</html>
