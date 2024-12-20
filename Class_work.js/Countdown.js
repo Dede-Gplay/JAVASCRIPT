@@ -3,7 +3,7 @@ const eventDate = new Date('2024-12-19T23:59:59');
 
 //function to update the countdown
 function updateCountdown(){
-    const now = new Date ();
+    const now = new Date();
     const difference = eventDate - now;
 
     //calculate the time components
@@ -28,4 +28,3 @@ function updateCountdown(){
 const countdownInterval = setInterval(updateCountdown, 1000);
 //initialize countdown on page load
 updateCountdown()
-
